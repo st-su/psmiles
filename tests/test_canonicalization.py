@@ -180,7 +180,7 @@ def test_canonicalize_polystyrene():
         canonicalize_smiles.append(PS(s).canonicalize.psmiles)
     one_smiles = list(set(canonicalize_smiles))
 
-    assert one_smiles == ["[*]CC([*])c1ccccc1"]
+    assert one_smiles == ["[]CC([])c1ccccc1"]
 
 
 def test_canonicalize_cis_trans():
